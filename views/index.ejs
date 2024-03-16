@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Compressor</title>
+</head>
+<body>
+<h1>Upload an image to compress</h1>
+<form action="/compress" method="post" enctype="multipart/form-data">
+  <input type="file" name="image" required>
+  <!-- Quality selection dropdown -->
+  <label for="quality">Compression Quality:</label>
+  <select name="quality" id="quality">
+    <option value="80">High (80)</option>
+    <option value="60">Medium (60)</option>
+    <option value="40">Low (40)</option>
+  </select>
+  <button type="submit">Compress Image</button>
+</form>
+</body>
+</html>
